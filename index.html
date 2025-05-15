@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tourism Monopoly</title>
+    <!--Fonts Poppins-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700;0&display=swap"
+      rel="stylesheet"
+    />
+    <!--Feather icons-->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!--stylesheet-->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!--header section-->
+    <header>
+      <div class="container">
+        <div class="logo">Tourism Monopoly</div>
+        <nav>
+          <ul>
+            <li><a href="home" class="active">Home</a></li>
+            <li><a href="Packages">Paket Perjalanan</a></li>
+            <li><a href="call-us">Hubungi Kami</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!--Banner section-->
+    <section id="home" class="banner">
+      <div class="container">
+        <div class="banner-slider">
+          <div class="slide-text active">
+            <div class="banner-content">
+              <h1>Agen Perjalanan Andalan</h1>
+              <p>Kenyamanan Anda Adalah Kebahagiaan Kami.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide-text">
+        <div class="banner-content">
+          <h1>Temukan Tempat Paling Menarik Seluruh Dunia</h1>
+          <p>Jadikan Memori Paling Indah</p>
+        </div>
+      </div>
+      <div class="slide-text">
+        <div class="banner-content">
+          <h1>Termurah Dan Terpercaya</h1>
+          <p>Ukir Momen Terbaik Di Tempat Favoritmu.</p>
+        </div>
+      </div>
+    </section>
+
+    <!--Main Content Section-->
+    <section class="main-content">
+      <div class="container">
+        <div class="content-wrapper">
+          <!--Testimonial 1-->
+          <div class="testimonial-container active">
+            <img src="https://picsum.photos/800/200?random=3" alt="Swiss" />
+            <div class="testimonial">
+                <p>"Swiss memang tempat kota paling nyaman untuk pergi berlibur."</p>    
+                <div class="testimonial-author">
+                    <img 
+                    src="https://picsum.photos/111/102?random=1"
+                    alt="Rizki Kurniawan" 
+                    class="author-img"
+                    />
+                    <div class="author-info">
+                    <h4>Rizki Kurniawan</h4>
+                    <p>Traveler, 25</p>
+                </div>
+            </div>
+            </div> 
+            </div>
+
+          </div>
+        </div>
+      </div>
+        <!--Testimonial 2-->
+        <div class="testimonial-container">
+            <img src="https://picsum.photos/800/500?random=3" alt="Bali" />
+            <div class="testimonial">
+                <p>Nuansa Alam Bali memang yang terbaik</p>
+                <div class="terstimonial-author">
+                    <img 
+                    src="https://picsum.photos/210/520?random=3" 
+                    alt="Bayu Maulana"
+                    class="author-img" />
+                    <div class="author-info">
+                      <h4>Bayu Maulana</h4>
+                      <p>Mahasiswa, 27</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact-form">
+            <h2>Booking Sekarang</h2>
+            <p>Mulai Petualanganmu dengan memilih tujuan perjalanan.</p>
+            <form>
+                <div class="form-group">
+                    <label form="name">Nama:</label>
+                    <input type="text" id="name" placeholder="Nama Lengkap" />
+                    <span class="error" id="nameError"></span>
+                </div>
+                <div class="form-group">
+                    <label form="email">Alamat Email;</label>
+                    <input type="email" id="email" placeholder="email@example.com" />
+                    <span class="error" id="emailError"></span>
+                </div>
+                <div class="form-group">
+                    <label for="destination">Tujuan</label>
+                    <Select id="destination">
+                        <option value="">Pilih Tujuan</option>
+                        <option value="Swiss">Swiss</option>
+                        <option value="Japan">Japan</option>
+                        <option value="Singapore">Singapore</option>
+                        <option value="Bandung">Bandung</option>
+                        <option value="Surabaya">Surabaya</option>
+                    </Select>
+                    <span class="error" id="destinationError"></span>
+                </div>
+                <button 
+                type="button"
+                onclick="validateform()"
+                class="btn-primary"
+                >
+                    SEND
+                </button>
+            </form>
+            <div class="benefits">
+                <div class="benefit-number">1</div>
+                <div class="benefit-text">
+                    <h3>Harga Termurah</h3>
+                    <p>Harga terjangkau untuk setiap perjalanan Anda</p>
+                </div>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-number">2</div>
+                <div class="benefit-text">
+                    <h3>Perjalanan Luar Biasa</h3>
+                    <p>Kenyamanan anda selama trip adalah prioritas kami yang tentunya dengan layanan terbaik.</p>
+                </div>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-number">3</div>
+                <div class="benefit-text">
+                    <h3>Terpercaya</h3>
+                    <P>Selama lebih dari 20 tahun, kami menjadi pilihan terpercaya para traveler.</P>
+                    <div class="benefit-item">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Packges Section-->
+    <section id="Packages" class="Packages">
+        <div class="container">
+            <h2>Paket Perjalanan</h2>
+            <div class="package-grad">
+                <div class="package-list">
+                <div class="package-icon">
+                    <i class="fas fa-water"></i>
+             </div>
+             <h3>Swiss</h3>
+             <p>
+                Keindahan Pegunungan Alpen, danau yang jernih, serta kota-kota bersejarah.
+            </p>
+             </div>
+             <div class="package-list">
+                <div class="package-icon">
+                    <i class="pas fa-toril-gate"></i>
+                </div>
+            <h3>Japan</h3>
+                <p>
+                Budaya unik Jepang, transportasi umum yang sangat maju dan keindahan alam yang sangat syahdu
+                </p>
+             </div>
+             <div class="package-icon">
+                <i class="fas fa-city"></i>
+             </div>
+            <h3>Singapore</h3>
+                <p>
+                    Perkotaan yang modern, infrastruktur dan transportasi umum yang sangat maju.
+                </p>
+             </div> 
+            <div class="package-list">
+                <div class="package-icon">
+                    <i class="fas fa-mountain"></i>
+                </div>
+            <h3>Bandung</h3>
+                <p>
+                    Kota yang dikenal sejuk karena letak geografisnya, kuliner yang beragam dan identik dengan nilai sejarah
+                </p>
+                <div class="package-list">
+                <div class="package-icon">
+                    <i class="fas fa-city"></i>
+                </div>
+            </div>
+            <h3>Surabaya</h3>
+            <p>
+                Kota pahlawan dengan sejarah nasional yang indenti dan kuliner yang sangat beragam.
+            </p>
+            </div>
+        </div>
+    </section>
+    <!--Call to action section-->
+    <section id="call-us" class="call-us">
+        <div class="container">
+            <h2>Hubungi Kami</h2>
+            <p>
+                Jika anda memiliki pertanyaan atau ingin memesan paket perjalanan, jangan ragu untuk menghubungi kami. Kmai siap membantu Anda merencanakan perjalanan impian Anda.
+            </p>
+            <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" class="btn-primary"><i class="fab fa-whatsapp"></i> Chat Via WhatsApp </a>    
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="container">
+            <div class="logo">Tourism Monopoly</div>
+        </div>
+    </footer>
+        
+    <script src="./js/script.js"></script>
+  </body>
+</html>
